@@ -353,6 +353,8 @@ textarea {
    .reef .content-wrapper {
      display:flex;
      justify-content: center;
+     z-index: 1;
+     position: relative;
    }
 
    .reef-info {
