@@ -116,6 +116,10 @@ textarea {
    }
 
 /* ---------------------------- header / footer */
+  header figure img {
+    width: 200px;
+  }
+
    header nav {
      background-color: #2e634f;
      color: #ffffff;
