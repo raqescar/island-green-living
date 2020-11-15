@@ -213,9 +213,31 @@ textarea {
      background-size: cover;
      color: #ffffff;
      text-align: center;
-     display: flex;
-     padding-top: 225px;
-     align-items: baseline;
+     position: relative;
+     overflow: hidden;
+     padding-top: 50%;
+   }
+
+   .hero-video {
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 1;
+     width: 100%;
+     height: auto;
+   }
+
+   .hero .content-wrapper {
+     position:absolute;
+     bottom: 10%;
+     left: 50%;
+     z-index: 2;
+     transform: translate(-50%);
+     margin: 0 auto;
+     max-width: 700px;
+     text-align: center;
    }
 
    .hero h1, .hero h2 {
