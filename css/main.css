@@ -496,11 +496,19 @@ textarea {
 
   .footer-content {
     display: flex;
-    justify-content: space-evenly;
   }
 
   footer .social, footer .donate {
     width: 50%;
+  }
+
+  .expenses-icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .expenses-icons article {
+    margin: 0 10px;
   }
 
 }
