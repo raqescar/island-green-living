@@ -494,6 +494,15 @@ textarea {
     width: 15%;
   }
 
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer .social, footer .donate {
+    width: 50%;
+  }
+
 }
 
 
