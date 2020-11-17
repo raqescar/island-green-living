@@ -104,7 +104,8 @@ textarea {
 
    .content-wrapper {
      width: 90%;
-     margin: 0 5%;
+     margin: auto;
+     max-width: 900px;
    }
 
    .button {
@@ -144,7 +145,7 @@ textarea {
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       position: absolute;
       margin-top: 50px;
-      z-index: 2;
+      z-index: 3;
       width: 100%;
       text-align: center;
     }
@@ -263,6 +264,10 @@ textarea {
     text-align: center;
    }
 
+   .about .content-wrapper {
+     max-width: 1200px;
+   }
+
    .current-projects {
      display: flex;
      flex-flow: row wrap;
@@ -323,7 +328,6 @@ textarea {
      font-weight:bold;
      letter-spacing: 3px;
      text-transform: uppercase;
-
    }
 
    .recycling .button {
@@ -333,6 +337,10 @@ textarea {
       padding: 30px 20px;
       font-weight: bold;
       font-size: 1.2em;
+   }
+
+   .expenses-container {
+     margin: 30px 0;
    }
 
    .expenses .container {
@@ -502,6 +510,21 @@ textarea {
     width: 50%;
   }
 
+  .expenses-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .expenses {
+    width: 50%;
+    margin: 0 10px;
+  }
+
+  .expenses .container {
+    height: 80px;
+    padding: 0 5px;
+  }
+
   .expenses-icons {
     display: flex;
     justify-content: space-evenly;
@@ -511,8 +534,8 @@ textarea {
     margin: 0 10px;
   }
 
-}
 
+}
 
 /*Desktop styles here*/
 @media only screen and (min-width: 1200px) {
