@@ -9,3 +9,14 @@ var showReef = function () {
   }
   console.log("it worked");
 }
+
+function showNav() {
+  var x = document.getElementById("navLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    console.log("menu open");
+  } else {
+    x.style.display = "block";
+    console.log("menu closed");
+  }
+}

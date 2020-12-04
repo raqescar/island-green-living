@@ -515,6 +515,7 @@ textarea {
     background-color: #2e634f;
   }
 
+/*
   nav:hover .dropdown-nav {
     display: flex;
   }
@@ -523,6 +524,7 @@ textarea {
     padding: 15px;
     width: 15%;
   }
+*/
 
   .footer-content {
     display: flex;
