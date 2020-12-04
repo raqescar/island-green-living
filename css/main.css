@@ -159,10 +159,6 @@ textarea {
       text-align: center;
     }
 
-    nav:hover .dropdown-nav {
-      display: block;
-    }
-
     .dropdown-nav ul:hover {
       background-color: #cbe7e285;
       margin: 0;
@@ -515,7 +511,7 @@ textarea {
     background-color: #2e634f;
   }
 
-/* navbar hover -changed to click
+/*
   nav:hover .dropdown-nav {
     display: flex;
   }
@@ -525,13 +521,16 @@ textarea {
     width: 15%;
   }
 */
-
   .footer-content {
     display: flex;
   }
 
   footer .social, footer .donate {
     width: 50%;
+  }
+
+  footer .photo-credit {
+    border-top: solid 1px;
   }
 
   .expenses-container {
