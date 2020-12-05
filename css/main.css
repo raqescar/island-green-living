@@ -141,7 +141,8 @@ textarea {
 
    header nav ul,  header nav ol {
       list-style-type: none;
-      padding: 0;
+      padding: 10px;
+      margin: 0;
       }
 
     header figure {
@@ -155,7 +156,7 @@ textarea {
       background-color: #2e634fe6;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       position: absolute;
-      margin-top: 50px;
+      margin-top: 40px;
       z-index: 3;
       width: 100%;
       text-align: center;
@@ -163,9 +164,6 @@ textarea {
 
     .dropdown-nav ul:hover {
       background-color: #cbe7e285;
-      margin: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
     }
 
     footer {
@@ -506,6 +504,12 @@ textarea {
     align-items: center;
   }
 
+  header nav ul,  header nav ol {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
   .nav-button {
     display: none;
   }
@@ -517,16 +521,6 @@ textarea {
     background-color: #2e634f;
   }
 
-/*
-  nav:hover .dropdown-nav {
-    display: flex;
-  }
-
-  .dropdown-nav ul:hover {
-    padding: 15px;
-    width: 15%;
-  }
-*/
   .footer-content {
     display: flex;
   }
