@@ -405,6 +405,10 @@ textarea {
      background-color: #ce4d20;
    }
 
+   .reef-info a {
+    color: white;
+    text-decoration: none;
+   }
 
 /* ==========================================================================
    Helper classes
