@@ -11,12 +11,10 @@ var showReef = function () {
 }
 
 function showNav() {
-  var x = document.getElementById("navLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    console.log("menu open");
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    x.style.display = "block";
-    console.log("menu closed");
+    x.className = "topnav";
   }
 }

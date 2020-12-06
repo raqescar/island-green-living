@@ -126,24 +126,12 @@ textarea {
 
    header .social-icons i {
     color: #2e634f;
+    font-size: 1.3em;
    }
 
    header .social-icons {
      display: none;
    }
-
-   header nav {
-     background-color: #2e634f;
-     color: #ffffff;
-     display: flex;
-     justify-content: center;
-   }
-
-   header nav ul,  header nav ol {
-      list-style-type: none;
-      padding: 10px;
-      margin: 0;
-      }
 
     header figure {
       padding: 20px;
@@ -151,19 +139,34 @@ textarea {
       justify-content: center;
     }
 
-    .dropdown-nav {
-      display: none;
-      background-color: #2e634fe6;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      position: absolute;
-      margin-top: 40px;
-      z-index: 3;
-      width: 100%;
-      text-align: center;
+   .topnav {
+     overflow: hidden;
+     background-color: #2e634f;
     }
 
-    .dropdown-nav ul:hover {
-      background-color: #cbe7e285;
+    .topnav a {
+      float: left;
+      color: #ffffff;
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      width: 15%;
+    }
+
+    .topnav a:hover {
+      background-color: #92cfb85c;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a.active {
+      background-color: #244d3d;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
     }
 
     footer {
@@ -254,7 +257,7 @@ textarea {
    }
 
    .hero h1, .hero h2 {
-     margin:0;
+     margin: 0;
      line-height: 1em;
    }
 
@@ -267,7 +270,7 @@ textarea {
    }
 
    .photo-credit {
-     font-size: .75em;
+     font-size: 0.75em;
      margin-left: 5px;
    }
 
@@ -303,7 +306,7 @@ textarea {
    .volunteer  {
      background-color: #cbe7e2;
      text-align: center;
-     padding:20px;
+     padding: 20px;
    }
 
 /* ---------------------------------------landfill  */
@@ -336,7 +339,7 @@ textarea {
    }
 
    .recycling p span {
-     font-weight:bold;
+     font-weight: bold;
      letter-spacing: 3px;
      text-transform: uppercase;
    }
@@ -382,13 +385,13 @@ textarea {
    .coral-reef {
      background: url('../img/reef.png') center no-repeat;
      background-size: cover;
-     width:100%;
+     width: 100%;
      height: 575px;
      position: absolute;
    }
 
    .reef .content-wrapper {
-     display:flex;
+     display: flex;
      justify-content: center;
      z-index: 1;
      position: relative;
@@ -401,7 +404,6 @@ textarea {
    .reef .button {
      background-color: #ce4d20;
    }
-
 
 
 /* ==========================================================================
@@ -490,6 +492,39 @@ textarea {
    Media Queries for Responsive Design.
    ========================================================================== */
 
+  /*Navigation bar */
+@media screen and (max-width: 768px) {
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 3px;
+    top: 0;
+  }
+
+  .topnav a {
+    width: auto;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
  /*Tablet styles here*/
 @media only screen and (min-width: 768px) {
 
@@ -553,13 +588,10 @@ textarea {
     margin: 0 10px;
   }
 
-
 }
 
 /*Desktop styles here*/
-@media only screen and (min-width: 1200px) {
-
- }
+@media only screen and (min-width: 1200px) {}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
