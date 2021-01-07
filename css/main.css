@@ -560,6 +560,10 @@ textarea {
     background-color: #2e634f;
   }
 
+  .hero{
+    padding-top: 40%;
+  }
+
   .footer-content {
     display: flex;
   }
