@@ -323,6 +323,9 @@ textarea {
      background-color: rgba(43, 49, 42, .5);
      text-align: center;
      padding: 20px;
+     max-width:450px;
+     margin-left: auto;
+     margin-right: auto;
    }
 
    /* --------------------------------------- recycling programs */
@@ -598,7 +601,13 @@ textarea {
 }
 
 /*Desktop styles here*/
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+  .landfill-info {
+    margin-right: 0;
+  }
+
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
