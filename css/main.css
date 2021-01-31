@@ -280,15 +280,20 @@ textarea {
     text-align: center;
    }
 
+   .about h2 {
+     margin: 40px;
+   }
+
    .current-projects {
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
+     margin-bottom: 50px;
    }
 
    .current-projects article {
      margin: 20px 15px;
-     max-width: 275px;
+     max-width: 250px;
    }
 
    .current-projects article img {
