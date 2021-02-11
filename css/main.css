@@ -219,7 +219,7 @@ textarea {
       border-top: solid 1px;
     }
 
-    header .content-wrapper, .about .content-wrapper {
+    header .content-wrapper {
       max-width: 1200px;
     }
 
@@ -278,6 +278,10 @@ textarea {
 
    .about {
     text-align: center;
+   }
+
+   .about .content-wrapper {
+     max-width: 900px;
    }
 
    .about h2 {
